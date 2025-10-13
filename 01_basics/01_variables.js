@@ -9,3 +9,5 @@ console.log(accountId);
 accountEmail = "adad@gmail.com"
 accountPassword = "1313131"
 accountCity = "jaipur"
+
+console.table([accountEmail, accountId, accountPassword, accountCity])
