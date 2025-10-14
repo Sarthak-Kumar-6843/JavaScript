@@ -1,1 +1,3 @@
-accountId = 2
+console.log(typeof valueInNumber);
+
+console.log(valueInNumber);
