@@ -1,3 +1,2 @@
-console.log(typeof valueInNumber);
-
-console.log(valueInNumber);
+let StringNumber = String(somenumber)
+// // console.log(StringNumber);
