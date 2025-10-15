@@ -1,1 +1,1 @@
-dang
+Date.now()/1000
