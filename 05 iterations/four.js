@@ -16,4 +16,6 @@ for (const key in programming) {
   // console.log(key); 
   console.log(programming[key]);  
 }
+
+//for in
  
