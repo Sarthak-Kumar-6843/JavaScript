@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+    let intervalId; // make it global so both buttons can access it
+
+    const sayDate = function(str) {
+      console.log(str, Date.now());
+    };
+
+    document.querySelector('#start').addEventListener('click', function() {
+      if (!intervalId) { // avoid multiple intervals
+        intervalId = setInterval(sayDate, 1000, "hi");
+      }
+    });
+
+    document.querySelector('#stop').addEventListener('click', function() {
+      clearInterval(intervalId);
+      intervalId = null; // reset so it can start again later
+      console.log("stopped");
+    });
+</script>
+</html> 
